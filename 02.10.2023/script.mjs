@@ -29,7 +29,7 @@ const srv = http.createServer(async (req,res)=>{
             })
     } else if (url === '/dziekujemy'){
         res.statusCode = 200
-        const html = await readFile('./thank.html')
+        const html = await readFile('./dziekujemy.html')
         res.setHeader('content-type','text/html')
         res.write(html)
         res.end()
