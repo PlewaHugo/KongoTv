@@ -8,7 +8,7 @@ const initialString = ' dostałem 2 z katkówki sadge :(';
 async function* generate() {
   yield initialString + '\n';
   for (let i = 0; i < 20; i++) {
-    const random = Math.floor(Math.random() * (-420 - 2137) - 420);
+    const random = Math.floor(Math.random() * (2137 + 420) - 420);
     yield random + '\n';
   }
 }
